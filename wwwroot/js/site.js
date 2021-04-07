@@ -1,4 +1,8 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿function nome(massage) {
+    return massage
+}
 
-// Write your JavaScript code.
+$("#enviar").click(function(){
+    let s = nome($("#nome").val())
+    $("#result").html(s)
+})
