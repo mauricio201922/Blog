@@ -33,5 +33,10 @@ namespace Teste.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [HttpGet("buscar")]
+        public IActionResult buscar([FromHeader]dynamic teste){
+            return Ok(teste);
+        }
     }
 }

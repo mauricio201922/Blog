@@ -1,8 +1,21 @@
-﻿function nome(massage) {
-    return massage
-}
-
-$("#enviar").click(function(){
-    let s = nome($("#nome").val())
-    $("#result").html(s)
-})
+﻿$("#enviar").bind("click", function () {
+    $.ajax({
+        method: "Get",
+        url: "buscar",
+        data: $("#nome"),
+        success: function (r) {
+            if ($("#nome").val() != "" && $("#comentario").val() != "")
+                $("#caixa").append($("#nome").val() + ":\n" + $("#comentario").val() + "\n\n")
+            else if ($("#nome").val() == "" && $("#comentario").val() == "") {
+                alert("Informe seu Nome e seu Comentário!")
+            }
+            else {
+                if($("#nome").val() == "") alert("Informe seu nome!")
+                else if ($("#comentario").val() == "") alert("Informe seu Comentário!")
+            }
+        },
+        error: function () {
+            alert("erro")
+        }
+    })
+});

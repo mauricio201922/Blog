@@ -2,6 +2,13 @@
     ViewData["Title"] = "Home Page";
 }
 
+<style>
+    #caixa{
+        margin: 0 400px 0 400px;
+        border: solid 1px;
+    }
+</style>
+
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -11,14 +18,11 @@
     <img src="http://www.sharkdatanetworks.com/images/logo3.png"/>
 
     <br/>
-
-    <form action="">
-        <input type="text" name="nome" id="nome" placeholder="Informe aqui seu nome" /><br /><br />
-        <input type="text" name="comentario" id="comentario" placeholder="comente aqui!" /><br /><br />
-        <input type="button" id="enviar" value="Enviar"/>
-    </form>
-
-    <br/><br/>
-
-    <h3 id="result"></h3>
+    <form action="" method="post">
+        <input type="text" name="nome" id="nome" placeholder="Informe aqui seu nome"/><br /><br />
+        <label><b>Comente Abaixo!</b></label><br/>
+        <textarea name="comentario" id="comentario" rows="5" cols="25"/></textarea><br /><br />
+        <input type="button" id="enviar" value="Enviar" />
+    </form><br/>
+    <textarea id="caixa" rows="5" cols="25" disabled></textarea>
 </div>
