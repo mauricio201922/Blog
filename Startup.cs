@@ -10,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Teste.Models;
-using Pomelo.EntityFrameworkCore.MySql;
+using Teste.Repository;
 
 namespace Teste
 {
@@ -34,6 +34,7 @@ namespace Teste
             });
 
             services.AddControllersWithViews();
+            services.AddScoped<IComentarioRepository, ComentarioRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

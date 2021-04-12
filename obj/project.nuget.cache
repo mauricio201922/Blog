@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "u0OOTNug0kUw3gdUoBNULWC6FMwgzjVcespP0npOZlEfIFTv3GjWTn09mvjrl5/or6UIRTmut5K+pwK7inGpiw==",
+  "dgSpecHash": "k9NjrdrXK6rUlEJBE/j4w1egvUjws0wvBVQMbKEM7vB6kxvdh+NKVy/u1BiF/UOavqPAfEHZLlNPV8w0jLbrrQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\plini\\OneDrive\\Documentos\\Blog com AspNet.Core (SharkData)\\Teste\\Teste.csproj",
   "expectedPackageFiles": [
@@ -43,10 +43,10 @@
     "C:\\Users\\plini\\.nuget\\packages\\mysql.data\\8.0.22\\mysql.data.8.0.22.nupkg.sha512",
     "C:\\Users\\plini\\.nuget\\packages\\mysql.data.entityframeworkcore\\8.0.22\\mysql.data.entityframeworkcore.8.0.22.nupkg.sha512",
     "C:\\Users\\plini\\.nuget\\packages\\mysql.data.entityframeworkcore.design\\8.0.19\\mysql.data.entityframeworkcore.design.8.0.19.nupkg.sha512",
-    "C:\\Users\\plini\\.nuget\\packages\\mysqlconnector\\0.69.9\\mysqlconnector.0.69.9.nupkg.sha512",
+    "C:\\Users\\plini\\.nuget\\packages\\mysqlconnector\\1.0.1\\mysqlconnector.1.0.1.nupkg.sha512",
     "C:\\Users\\plini\\.nuget\\packages\\netstandard.library\\1.6.0\\netstandard.library.1.6.0.nupkg.sha512",
     "C:\\Users\\plini\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
-    "C:\\Users\\plini\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\3.2.0\\pomelo.entityframeworkcore.mysql.3.2.0.nupkg.sha512",
+    "C:\\Users\\plini\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.0-alpha.1\\pomelo.entityframeworkcore.mysql.5.0.0-alpha.1.nupkg.sha512",
     "C:\\Users\\plini\\.nuget\\packages\\pomelo.jsonobject\\2.2.1\\pomelo.jsonobject.2.2.1.nupkg.sha512",
     "C:\\Users\\plini\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\plini\\.nuget\\packages\\runtime.native.system.io.compression\\4.1.0\\runtime.native.system.io.compression.4.1.0.nupkg.sha512",

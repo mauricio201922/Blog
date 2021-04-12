@@ -15,13 +15,15 @@
 
     <br/>
 
-    <img src="http://www.sharkdatanetworks.com/images/logo3.png"/>
+    <img src="http://www.sharkdatanetworks.com/images/logo3.png"/><br/>
+
+    
 
     <br/>
-    <form action="" method="post">
-        <input type="text" name="nome" id="nome" placeholder="Informe aqui seu nome"/><br /><br />
+    <form asp-area="" asp-controller="Home" asp-action="Salvar">
+        <input type="text" name="nome" id="nome" placeholder="Informe aqui seu nome"/><br/><br/>
         <label><b>Comente Abaixo!</b></label><br/>
-        <textarea name="comentario" id="comentario" rows="5" cols="25"/></textarea><br /><br />
+        <textarea name="comentario" id="comentario" rows="5" cols="25"></textarea><br /><br />
         <input type="button" id="enviar" value="Enviar" />
     </form><br/>
     <textarea id="caixa" rows="5" cols="25" disabled></textarea>

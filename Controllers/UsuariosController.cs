@@ -19,5 +19,16 @@ namespace Teste.Controllers
         public IActionResult Usuarios(){
             return View();
         }
+
+        public IActionResult SaveData(dynamic nome, dynamic comentario){
+
+            Context db = new Context();
+
+            Comentario cm = new Comentario();
+            cm.nome = nome;
+            cm.comenta = comentario;
+
+            return View();
+        }
     }
 }

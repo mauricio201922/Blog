@@ -551,7 +551,7 @@
           "lib/net452/MySql.Data.EntityFrameworkCore.Design.dll": {}
         }
       },
-      "MySqlConnector/0.69.9": {
+      "MySqlConnector/1.0.1": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.0/MySqlConnector.dll": {}
@@ -618,18 +618,18 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Pomelo.EntityFrameworkCore.MySql/3.2.0": {
+      "Pomelo.EntityFrameworkCore.MySql/5.0.0-alpha.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "3.1.8",
-          "MySqlConnector": "[0.69.9, 1.0.0)",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.0-rc.2.20475.6",
+          "MySqlConnector": "1.0.1",
           "Pomelo.JsonObject": "2.2.1"
         },
         "compile": {
-          "lib/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.dll": {}
+          "lib/netstandard2.1/Pomelo.EntityFrameworkCore.MySql.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.dll": {}
+          "lib/netstandard2.1/Pomelo.EntityFrameworkCore.MySql.dll": {}
         }
       },
       "Pomelo.JsonObject/2.2.1": {
@@ -3139,10 +3139,10 @@
         "mysql.data.entityframeworkcore.design.nuspec"
       ]
     },
-    "MySqlConnector/0.69.9": {
-      "sha512": "WpY4jWc5ee5kgKy3XAK9JMjRmn7+jLYCgDlYvFK+GTrzaiWDWoYLbtJge6l1tqo2teUAP3kzzsJpP8QwJM1W4Q==",
+    "MySqlConnector/1.0.1": {
+      "sha512": "bnQk6joP7z0k1aIk13BjrZXIakN+UobXjO8EMh/Y+L6vZ6ul9cJ8RXkD9tia86ksgFs9GqmvPgX7ILx7mOpwNQ==",
       "type": "package",
-      "path": "mysqlconnector/0.69.9",
+      "path": "mysqlconnector/1.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3152,6 +3152,8 @@
         "lib/net461/MySqlConnector.xml",
         "lib/net471/MySqlConnector.dll",
         "lib/net471/MySqlConnector.xml",
+        "lib/net5.0/MySqlConnector.dll",
+        "lib/net5.0/MySqlConnector.xml",
         "lib/netcoreapp2.1/MySqlConnector.dll",
         "lib/netcoreapp2.1/MySqlConnector.xml",
         "lib/netcoreapp3.0/MySqlConnector.dll",
@@ -3163,7 +3165,7 @@
         "lib/netstandard2.1/MySqlConnector.dll",
         "lib/netstandard2.1/MySqlConnector.xml",
         "logo.png",
-        "mysqlconnector.0.69.9.nupkg.sha512",
+        "mysqlconnector.1.0.1.nupkg.sha512",
         "mysqlconnector.nuspec"
       ]
     },
@@ -3209,16 +3211,17 @@
         "newtonsoft.json.nuspec"
       ]
     },
-    "Pomelo.EntityFrameworkCore.MySql/3.2.0": {
-      "sha512": "uiI4fLHIrkbvLkahiEnRa2ilD5aRQyjdSUEfZZqZAQmW56NATXBDS+zeZeg3jAdahqjnSDsCop7VjVBkEo5B+w==",
+    "Pomelo.EntityFrameworkCore.MySql/5.0.0-alpha.1": {
+      "sha512": "+7o8EwczCPeTFdzMfj0ZyUTzY/idKLxKCBo9Z3l0a5Wc2IvnL3y1bWUbMuYNTc7viLSZfAZHFj92gbRowvZ4Mw==",
       "type": "package",
-      "path": "pomelo.entityframeworkcore.mysql/3.2.0",
+      "path": "pomelo.entityframeworkcore.mysql/5.0.0-alpha.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
-        "lib/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.dll",
-        "pomelo.entityframeworkcore.mysql.3.2.0.nupkg.sha512",
+        "lib/netstandard2.1/Pomelo.EntityFrameworkCore.MySql.dll",
+        "lib/netstandard2.1/Pomelo.EntityFrameworkCore.MySql.xml",
+        "pomelo.entityframeworkcore.mysql.5.0.0-alpha.1.nupkg.sha512",
         "pomelo.entityframeworkcore.mysql.nuspec"
       ]
     },
@@ -7658,7 +7661,7 @@
       "Microsoft.EntityFrameworkCore.tools >= 5.0.5",
       "MySql.Data.EntityFrameworkCore >= 8.0.22",
       "MySql.Data.EntityFrameworkCore.Design >= 8.0.19",
-      "Pomelo.EntityFrameworkCore.MySql >= 3.2.0"
+      "Pomelo.EntityFrameworkCore.MySql >= 5.0.0-alpha.1"
     ]
   },
   "packageFolders": {
@@ -7728,7 +7731,7 @@
           },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
-            "version": "[3.2.0, )"
+            "version": "[5.0.0-alpha.1, )"
           }
         },
         "imports": [

@@ -1,21 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Teste.Models;
+using Teste.Repository;
 
 namespace Teste.Controllers
 {
+    //[Route("[controller]")]
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IComentarioRepository _comentarioRepository;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IComentarioRepository comentarioRepository)
         {
-            _logger = logger;
+            _comentarioRepository = comentarioRepository;
         }
 
         public IActionResult Index()
@@ -28,15 +27,17 @@ namespace Teste.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Salvar(){
+           
+         return Ok( _comentarioRepository.Salvar("tetse", "teste2")); 
+            
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
-        [HttpGet("buscar")]
-        public IActionResult buscar([FromHeader]dynamic teste){
-            return Ok(teste);
         }
     }
 }

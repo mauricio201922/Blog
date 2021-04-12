@@ -1,7 +1,7 @@
 ﻿$("#enviar").bind("click", function () {
     $.ajax({
-        method: "Get",
-        url: "buscar",
+        method: "POST",
+        url: "Home/Salvar",
         data: $("#nome"),
         success: function (r) {
             if ($("#nome").val() != "" && $("#comentario").val() != "")
