@@ -28,9 +28,9 @@ namespace Teste.Controllers
         }
 
         [HttpPost]
-        public IActionResult Salvar(){
+        public IActionResult Salvar(string nome, string comentario){
            
-         return Ok( _comentarioRepository.Salvar("tetse", "teste2")); 
+         return Ok(_comentarioRepository.Salvar(nome, comentario)); 
             
         }
 
