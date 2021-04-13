@@ -3,39 +3,29 @@
 }
 
 <style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    .form-style{
-        border: solid 1px;
-        margin: 0 35% 0 35%;
+    .login-style{
+        margin: 0 40% 0 40%;
         padding: 0 5px 0 5px;
     }
 </style>
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1>Login</h1>
 
     <br/>
 
-    <img src="http://www.sharkdatanetworks.com/images/logo3.png"/><br/>
+    <form id="insert-login" class="login-style">
+        <label>Nome: </label>
+        <input type="text" name="nomeLogin">
 
-    
+        <br/><br/>
 
-    <br/>
-    <form method="POST" id="insert-form" class="form-style"><br/>
+        <label>Senha: </label>
+        <input type="password" name="senha">
 
-        <input type="text" name="nome" id="nome" placeholder="Informe aqui seu nome"/><br/><br/>
+        <br/><br/>
 
-        <label><b>Comente Abaixo!</b></label><br/>
-        <textarea name="comentario" id="comentario" rows="5" cols="25"></textarea><br /><br />
-
-        <input type="button" id="enviar" value="Enviar" class="btn-primary"/><br /><br />
-
-        <textarea id="caixa" rows="5" cols="25" disabled class="default"></textarea><br/><br/>
-
+        <input type="button" name="logar" value="Logar">
     </form>
 
 </div>

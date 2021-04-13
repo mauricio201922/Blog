@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using Teste.Models;
 
 namespace Teste.Repository
@@ -23,8 +25,15 @@ namespace Teste.Repository
             _context.comentario.Add(salva);
             _context.SaveChanges();
 
-            return "foi ";
+            return salva;
           
+        }
+
+        public object RetornaComentarios(){
+
+            var dados = _context.comentario.ToList();
+
+            return dados;
         }
     }
 }

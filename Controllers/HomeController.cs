@@ -1,13 +1,10 @@
 ﻿using System.Diagnostics;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Teste.Models;
 using Teste.Repository;
 
 namespace Teste.Controllers
 {
-    //[Route("[controller]")]
     public class HomeController : Controller
     {
         private readonly IComentarioRepository _comentarioRepository;
@@ -27,11 +24,22 @@ namespace Teste.Controllers
             return View();
         }
 
+        public IActionResult Comentario(){
+            return View();
+        }
+
         [HttpPost]
         public IActionResult Salvar(string nome, string comentario){
            
-         return Ok(_comentarioRepository.Salvar(nome, comentario)); 
+            return Ok(_comentarioRepository.Salvar(nome, comentario)); 
             
+        }
+
+        [HttpGet]
+        public IActionResult RetornaComentarios(){
+
+            return Ok(_comentarioRepository.RetornaComentarios());
+
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

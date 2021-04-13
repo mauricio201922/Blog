@@ -94,3 +94,4 @@ C:\Users\plini\OneDrive\Documentos\Blog com AspNet.Core (SharkData)\Teste\bin\De
 C:\Users\plini\OneDrive\Documentos\Blog com AspNet.Core (SharkData)\Teste\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
 C:\Users\plini\OneDrive\Documentos\Blog com AspNet.Core (SharkData)\Teste\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
 C:\Users\plini\OneDrive\Documentos\Blog com AspNet.Core (SharkData)\Teste\obj\Debug\netcoreapp3.1\Razor\Views\Usuarios\Usuarios.cshtml.g.cs
+C:\Users\plini\OneDrive\Documentos\Blog com AspNet.Core (SharkData)\Teste\obj\Debug\netcoreapp3.1\Razor\Views\Home\Comentario.cshtml.g.cs

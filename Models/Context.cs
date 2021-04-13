@@ -11,6 +11,7 @@ namespace Teste.Models{
         }
 
         public DbSet<Comentario> comentario { get; set; }
+        public DbSet<Login> login{ get; set; }
     }
 
 }
