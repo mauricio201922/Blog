@@ -3,9 +3,14 @@
 }
 
 <style>
-    #caixa{
-        margin: 0 400px 0 400px;
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .form-style{
         border: solid 1px;
+        margin: 0 35% 0 35%;
+        padding: 0 5px 0 5px;
     }
 </style>
 
@@ -20,11 +25,18 @@
     
 
     <br/>
-    <form method="POST" id="insert-form">
+    <form method="POST" id="insert-form" class="form-style"><br/>
+
         <input type="text" name="nome" id="nome" placeholder="Informe aqui seu nome"/><br/><br/>
+
         <label><b>Comente Abaixo!</b></label><br/>
         <textarea name="comentario" id="comentario" rows="5" cols="25"></textarea><br /><br />
-        <input type="button" id="enviar" value="Enviar" />
-    </form><br/>
-    <textarea id="caixa" rows="5" cols="25" disabled></textarea>
+
+        <input type="button" id="enviar" value="Enviar" class="btn-primary"/><br /><br />
+
+        <textarea id="caixa" rows="5" cols="25" disabled class="default"></textarea><br/><br/>
+
+    </form>
+
 </div>
+

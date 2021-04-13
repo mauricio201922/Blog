@@ -9,18 +9,18 @@
         success: function (r) {
             alert(r) // Retorna um objeto do method 'Salvar', é um object string
 
-            /*if ($("#nome").val() != "" && $("#comentario").val() != "")
-                $("#caixa").append($("#nome").val() + ":\n" + $("#comentario").val() + "\n\n")
-            else if ($("#nome").val() == "" && $("#comentario").val() == "") {
+            $("#caixa").append($("#nome").val() + ":\n" + $("#comentario").val() + "\n\n")
+            
+        },
+        error: function () {
+            
+            if ($("#nome").val() == "" && $("#comentario").val() == "") {
                 alert("Informe seu Nome e seu Comentário!")
             }
             else {
                 if($("#nome").val() == "") alert("Informe seu nome!")
                 else if ($("#comentario").val() == "") alert("Informe seu Comentário!")
-            }*/
-        },
-        error: function () {
-            alert("erro")
+            }
         }
     });
 });
