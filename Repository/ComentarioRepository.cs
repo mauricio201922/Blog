@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Linq;
 using Teste.Models;
 
@@ -39,7 +38,9 @@ namespace Teste.Repository
         public bool LoginValid(string nome, string senha){
             var dados = _context.login.ToList();
 
-            if(dados[0].nome == nome && dados[0].senha == senha) return true;
+            for(var i = 0; i < dados.Count; i++){
+                if(dados[i].nome == nome && dados[i].senha == senha) return true;
+            }
 
             return false;
         }

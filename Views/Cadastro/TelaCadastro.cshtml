@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Tela Cadastro de Usuário";
+}
+
+<style>
+    .login-style{
+        margin: 0 40% 0 40%;
+        padding: 0 5px 0 5px;
+    }
+</style>
+
+<div class="text-center">
+    <h1>Cadastro</h1>
+
+    <br/>
+
+    <form method="POST" id="insert-cadastro" class="login-style">
+        <label>Nome: </label>
+        <input type="text" name="nome" id="cadastroNome">
+
+        <br/><br/>
+
+        <label>Senha: </label>
+        <input type="password" name="senha" id="cadastroSenha">
+
+        <br/><br/>
+
+        <label>Confirme a senha: </label>
+        <input type="password" id="confirmeSenha">
+
+        <br/><br/>
+
+        <input id="cadastrar" type="button" name="cadastrar" value="Cadastrar">
+    </form>
+
+    <br/><br/>
+
+    <div id="cadastroSucesso"></div>
+
+</div>
+

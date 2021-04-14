@@ -24,6 +24,7 @@ namespace Teste.Controllers
             return View();
         }
 
+        [Route("comentario")]
         public IActionResult Comentario(){
             return View();
         }

@@ -11,7 +11,7 @@ namespace Teste.Models
         public int id { get; set; }
 
         [Required]
-        [Display(Name = "nomeLogin")]
+        [Display(Name = "nome")]
         [Column("nome")]
         public string nome { get; set; }
 

@@ -14402,6 +14402,11 @@
   "RootNamespace": "Teste",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\plini\\OneDrive\\Documentos\\Blog com AspNet.Core (SharkData)\\Teste\\Views\\CadastroUsuario\\TelaCadastro.cshtml",
+      "TargetPath": "Views\\CadastroUsuario\\TelaCadastro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\plini\\OneDrive\\Documentos\\Blog com AspNet.Core (SharkData)\\Teste\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -14429,16 +14434,6 @@
     {
       "FilePath": "c:\\Users\\plini\\OneDrive\\Documentos\\Blog com AspNet.Core (SharkData)\\Teste\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\plini\\OneDrive\\Documentos\\Blog com AspNet.Core (SharkData)\\Teste\\Views\\Login\\Login.cshtml",
-      "TargetPath": "Views\\Login\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\plini\\OneDrive\\Documentos\\Blog com AspNet.Core (SharkData)\\Teste\\Views\\Usuarios\\Usuarios.cshtml",
-      "TargetPath": "Views\\Usuarios\\Usuarios.cshtml",
       "FileKind": "mvc"
     },
     {

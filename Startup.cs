@@ -35,6 +35,7 @@ namespace Teste
 
             services.AddControllersWithViews();
             services.AddScoped<IComentarioRepository, ComentarioRepository>();
+            services.AddScoped<ICadastroRepository, CadastroRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
