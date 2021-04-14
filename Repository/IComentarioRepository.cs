@@ -4,5 +4,7 @@ namespace Teste.Repository
     {
         object Salvar(string Nome, string Comentario);
         object RetornaComentarios();
+
+        bool LoginValid(string nome, string senha);
     }
 }

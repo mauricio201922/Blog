@@ -16,7 +16,7 @@ $("#enviar").on("click", function () {
 
     $.ajax({
         method: "POST", // procura uma ação com o [HttpPost]
-        url: "Home/Salvar", // URL ou diretório para a ação, 'Home' é o Controller e o 'Salvar' é a ação
+        url: "Salvar", // URL ou diretório para a ação, 'Home' é o Controller e o 'Salvar' é a ação
         data: dados, // passando como parâmetro o nome q for inserido no input com 'id=nome'
         success: function (r) {
             // alert(r); // Retorna um objeto do method 'Salvar', é um object string

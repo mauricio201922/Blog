@@ -14432,6 +14432,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\plini\\OneDrive\\Documentos\\Blog com AspNet.Core (SharkData)\\Teste\\Views\\Login\\Login.cshtml",
+      "TargetPath": "Views\\Login\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\plini\\OneDrive\\Documentos\\Blog com AspNet.Core (SharkData)\\Teste\\Views\\Usuarios\\Usuarios.cshtml",
       "TargetPath": "Views\\Usuarios\\Usuarios.cshtml",
       "FileKind": "mvc"

@@ -1,13 +1,14 @@
 ﻿$("#logar").bind("click", function(){
 
-    var dadosLogin = $("#insert-login").serialize()
+    var dadosLogin = $("#insert-login").serialize();
 
     $.ajax({
         type: "POST",
-        url: "Login/Login",
+        url: "Home/Logar",
         data: dadosLogin,
-        success: function (response) {
-            console.log(response)
+        success: function (r) {
+            if(r) window.location.href = "https://localhost:5001/Home/Comentario"
+            else alert("Este login não existe!")
         },
         error: function(){
             alert("Error!")

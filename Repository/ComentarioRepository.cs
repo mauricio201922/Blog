@@ -35,5 +35,13 @@ namespace Teste.Repository
 
             return dados;
         }
+
+        public bool LoginValid(string nome, string senha){
+            var dados = _context.login.ToList();
+
+            if(dados[0].nome == nome && dados[0].senha == senha) return true;
+
+            return false;
+        }
     }
 }

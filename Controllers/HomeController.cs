@@ -42,6 +42,12 @@ namespace Teste.Controllers
 
         }
 
+        /* Retorna um valor do method LoginValid caso for 'OK = 200' */
+        [HttpPost]
+        public IActionResult Logar(string nome, string senha){
+            return Ok(_comentarioRepository.LoginValid(nome, senha));
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
