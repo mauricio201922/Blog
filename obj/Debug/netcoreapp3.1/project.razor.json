@@ -14402,8 +14402,8 @@
   "RootNamespace": "Teste",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\plini\\OneDrive\\Documentos\\Blog com AspNet.Core (SharkData)\\Teste\\Views\\CadastroUsuario\\TelaCadastro.cshtml",
-      "TargetPath": "Views\\CadastroUsuario\\TelaCadastro.cshtml",
+      "FilePath": "c:\\Users\\plini\\OneDrive\\Documentos\\Blog com AspNet.Core (SharkData)\\Teste\\Views\\Cadastro\\TelaCadastro.cshtml",
+      "TargetPath": "Views\\Cadastro\\TelaCadastro.cshtml",
       "FileKind": "mvc"
     },
     {

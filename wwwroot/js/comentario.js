@@ -3,8 +3,8 @@ $(document).ready(function(){
         method: "GET",
         url: "/Home/RetornaComentarios",
         success: function (response) {
-            for(var i = 0; i < response.length; i++){
-                $("#caixa").append(response[i].nome + ":\n" + response[i].comenta + "\n\n");
+            for(var i = response.length - 1; i >= 0; i--){
+                $("#caixa").append(response[i].nome + ":\n" + "Comentário: " + response[i].comenta + "\n\n");
             }
         },
     })
@@ -20,7 +20,7 @@ $("#enviar").on("click", function () {
         data: dados, // passando como parâmetro o nome q for inserido no input com 'id=nome'
         success: function (r) {
             // alert(r); // Retorna um objeto do method 'Salvar', é um object string
-            $("#caixa").append("Usuario: " + r.nome +"\n" + "Comentario: " + r.comenta + "\n\n")
+            $("#caixa").prepend(r.nome +":\n" + "Comentario: " + r.comenta + "\n\n")
 
             console.log(JSON.stringify(r))
 

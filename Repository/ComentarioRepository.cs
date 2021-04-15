@@ -32,6 +32,7 @@ namespace Teste.Repository
 
             var dados = _context.comentario.ToList();
 
+
             return dados;
         }
 
