@@ -16,7 +16,13 @@ namespace Teste
 {
     public class Startup
     {
-        public IConfiguration _config { get; }
+        public Startup(IConfiguration _config, IConfiguration configuration) 
+        {
+            this._config = _config;
+                this.Configuration = configuration;
+               
+        }
+                public IConfiguration _config { get; }
         public Startup(IConfiguration configuration)
         {
             _config = configuration;
@@ -33,9 +39,20 @@ namespace Teste
                 {c.UseMySql(stringConection);
             });
 
+            
+
             services.AddControllersWithViews();
             services.AddScoped<IComentarioRepository, ComentarioRepository>();
             services.AddScoped<ICadastroRepository, CadastroRepository>();
+            services.AddScoped<IContatoRepository, ContatoRepository>();
+
+            services.AddCors(options => {
+                options.AddPolicy("CorsPolicy", builder => {
+                    builder.WithOrigins("http://localhost:8080",
+                                        "http://192.168.0.4:8080");
+                });
+            });
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,10 +68,15 @@ namespace Teste
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseCors("CorsPolicy");
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

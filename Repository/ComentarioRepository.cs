@@ -45,5 +45,15 @@ namespace Teste.Repository
 
             return false;
         }
+
+        public void DeletarComentario(int id){
+            
+            Comentario com = _context.comentario.Find(id);
+
+            _context.comentario.Remove(com);
+            _context.SaveChanges();
+        }
+
+        
     }
 }

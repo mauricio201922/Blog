@@ -1,4 +1,3 @@
-using System;
 using Microsoft.EntityFrameworkCore;
 
 namespace Teste.Models{
@@ -11,7 +10,8 @@ namespace Teste.Models{
         }
 
         public DbSet<Comentario> comentario { get; set; }
-        public DbSet<Login> login{ get; set; }
+        public DbSet<Login> login { get; set; }
+        public DbSet<Contato> contato { get; set; }
     }
 
 }

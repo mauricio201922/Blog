@@ -49,6 +49,14 @@ namespace Teste.Controllers
             return Ok(_comentarioRepository.LoginValid(nome, senha));
         }
 
+        [HttpPost]
+        public IActionResult DeletarComentario(int id){
+            _comentarioRepository.DeletarComentario(id);
+            return Ok("Foi");
+        }
+
+        
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

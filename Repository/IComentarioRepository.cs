@@ -6,5 +6,7 @@ namespace Teste.Repository
         object RetornaComentarios();
 
         bool LoginValid(string nome, string senha);
+
+        void DeletarComentario(int id);
     }
 }
