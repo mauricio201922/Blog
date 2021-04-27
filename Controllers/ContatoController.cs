@@ -11,10 +11,11 @@ namespace Teste.Controllers
         {
             _contatoRepository = contatoRepository;
         }
-        [HttpGet]
+
+        [HttpPost]
         public IActionResult EnviarContato(string nome, string email, string telefone, string mensagem){
             _contatoRepository.EnviarContatoRepo(nome, email, telefone, mensagem);
-            return Ok("Foi");
+            return Ok();
         }
     }
 }

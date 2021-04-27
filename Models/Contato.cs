@@ -18,6 +18,9 @@ namespace Teste.Models
 
         [Column("tel")]
         public string telelefone { get; set; }
+
+        [Column("mensagem")]
+        public string msg { get; set; }
         
     }
 }

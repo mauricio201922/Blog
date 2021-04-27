@@ -34,14 +34,13 @@ namespace Teste
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddControllers();
+
             string stringConection = _config.GetConnectionString("DefaultStrings");
             services.AddDbContext<Context>(c => 
                 {c.UseMySql(stringConection);
             });
 
-            
-
-            services.AddControllersWithViews();
             services.AddScoped<IComentarioRepository, ComentarioRepository>();
             services.AddScoped<ICadastroRepository, CadastroRepository>();
             services.AddScoped<IContatoRepository, ContatoRepository>();
@@ -52,7 +51,6 @@ namespace Teste
                                         "http://192.168.0.4:8080");
                 });
             });
-            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
